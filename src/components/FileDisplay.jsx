@@ -16,7 +16,7 @@ const FileDisplay = () => {
 
   useEffect(() => {
     // Fetch the Excel file from the public directory
-    fetch("./public/electr_board_data.xlsx")
+    fetch("./electr_board_data.xlsx")
       .then((response) => response.arrayBuffer())
       .then((arrayBuffer) => {
         const workbook = XLSX.read(new Uint8Array(arrayBuffer), {
