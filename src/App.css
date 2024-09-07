@@ -1,0 +1,176 @@
+/* App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  
+  padding: 20px;
+}
+
+/* h2{
+  text-align:justify
+} */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #f4f4f4;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+tr {
+  height: 50px; /* Set a fixed height for rows */
+  width: 100%; /* Ensure the row takes full width */
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.search-container {
+  margin: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center; /* Align the input and icon vertically */
+  gap: 10px; /* Adds spacing between input and icon */
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px; /* Adjust based on your layout */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-icon {
+  color: #888; /* Icon color */
+  font-size: 20px; /* Adjust icon size */
+  cursor: pointer;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.5);
+}
+
+.search-placeholder {
+  color: #aaa;
+}
+
+.date-picker-container {
+  margin: 20px;
+  display: flex;
+  justify-content: start;
+  gap: 10px; /* Adjust spacing between date pickers */
+}
+
+.react-datepicker-wrapper {
+  display: inline-block;
+}
+
+.react-datepicker__input-container input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 150px; /* Adjust width as needed */
+}
+
+.react-datepicker__input-container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.5);
+}
+
+/* EditableRowForm.css */
+
+.editable-row-form {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editable-row-form h2 {
+  margin-bottom: 16px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.editable-row-form div {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.editable-row-form label {
+  flex: 1;
+  font-weight: bold;
+  margin-right: 8px;
+  color: #555;
+}
+
+.editable-row-form input[type="text"] {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.editable-row-form button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.editable-row-form button[type="submit"] {
+  background-color: #4CAF50; /* Green */
+}
+
+.editable-row-form button[type="button"] {
+  background-color: #f44336; /* Red */
+}
+
+.editable-row-form button:hover {
+  opacity: 0.9;
+}
+
